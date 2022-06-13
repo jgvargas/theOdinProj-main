@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./project.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <p class="logo">Odin</p>
+                <ul>
+                    <li>
+                        <a href="">Home</a></li>
+                    <li>
+                        <a href="">About</a></li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h1>Application</h1>
+            <form class="practice-form" action="">
+                <div class="split">
+                    <div>
+                        <label for="firstName">First name:</label>
+                        <input required type="text" name="firstName" placeholder="'John'" id="firstName">
+                        <label for="userEmail">Email:</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="john@example.com">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div>
+                        <label for="dob">DOB:</label>
+                        <input type="date" name="dob" id="dob">
+                        <textarea name="" id="" cols="30" rows="10">Tell us more</textarea>
+                        <label for="reference">How did you hear about us?</label>
+                        <select name="reference" id="">
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Glassdoor" selected>Glassdoor</option>
+                            <option value="Indeed" selected>Indeed</option>
+                            <optgroup label="Other">
+                                <option value="Reference">Referece</option>
+                            </optgroup>
+                        </select>
+
+                        <p>Are you a US citizen?</p>
+                        <input type="radio" name="citizen" id="citizen_yes" checked>
+                        <label for="citizen_yes">Yes</label>
+                        <input type="radio" name="citizen" id="citizen_no">
+                        <label for="citizen_no">No</label>
+                    </div>
+
+                    <div>
+                        <label for="contract">Contract</label>
+                        <input type="checkbox" name="employment_type" id="contract">
+                        <input type="checkbox" name="employment_type" id="">
+                    </div>
+                </div>
+                
+                
+
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

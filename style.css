@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(218, 216, 216);
+}
+
+.container {
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.split { 
+    display: flex;
+    gap: 2rem;
+}
+
+.split > * { 
+    flex-basis: 100%;
+}
+
+nav {
+    background: rgb(216, 130, 130);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    padding: .5rem .25rem;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Nav*/
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #fff;
+}
