@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment1.css">
+    <script defer src="./assignment1.js"></script>
+    <title>Assignment 1</title>
+</head>
+<body>
+    <main class="split">
+        <div class="side">
+            <div class="banner">
+                <img src="../../img/odin-lined.png" alt="Odin project logo">
+                <p>Odin</p>
+            </div>
+        </div>
+        <div class="main">
+            <section class="container intro">
+                <p>
+                    This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get get started.
+                </p>
+                <br>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+
+            </section>
+            <section class="signup-section">
+                <form id="signup" class="container" action="">
+                    <h2>Let's do this!</h2>
+
+                    <div class="split">
+                        <div class="equal">
+                            <div class="input-space">
+                                <label for="first_name">First Name</label>
+                                <input autofocus type="text" name="first_name" id="first_name">
+            
+                            </div>
+                            
+                            <div class="input-space">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            
+                            </div>
+                            
+                            <div class="input-space">
+                                <label for="password">Password</label>
+                                <input required type="password" name="password" id="password">    
+                                <span id="error-pass"></span>
+                            </div>
+                        </div>
+                        <div class="equal">
+                            <div class="input-space">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name">        
+                            </div>
+                            
+                            <div class="input-space">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="tel" name="phone_number" id="phone_number">    
+                            </div>
+
+                            <div class="input-space">
+                                <label for="conf_password">Confirm Password</label>
+                                <input required type="password" name="conf_password" id="conf_password">    
+                            </div>
+                            </div>
+                    </div>
+
+
+
+                </form>
+            </section>
+            <section class="container end">
+                <button form="signup" type="submit">Create Account</button>
+                <p>
+                    Already have an account? <a href="#">Log in</a>
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

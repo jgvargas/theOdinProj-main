@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../project.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <p class="logo">Odin</p>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="#">Forms</a></li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="container split">
+        <section class="card">
+            <h1>Application</h1>
+            <form class="practice-form" action="">
+                <div class="">
+                    <div>
+                        <label for="firstName">First name:</label>
+                        <input required type="text" name="firstName" placeholder="'John'" id="firstName">
+                        <label for="userEmail">Email:</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="john@example.com">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div>
+                        <label for="dob">DOB:</label>
+                        <input type="date" name="dob" id="dob">
+                        <label for="reference">How did you hear about us?</label>
+                        <select name="reference" id="">
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Glassdoor" selected>Glassdoor</option>
+                            <option value="Indeed" selected>Indeed</option>
+                            <optgroup label="Other">
+                                <option value="Reference">Referece</option>
+                            </optgroup>
+                        </select>
+
+                        <p>Are you a US citizen?</p>
+                        <input type="radio" name="citizen" id="citizen_yes" checked>
+                        <label for="citizen_yes">Yes</label>
+                        <input type="radio" name="citizen" id="citizen_no">
+                        <label for="citizen_no">No</label>
+
+                        <br>
+                        <br>
+                        <p>What kind of employment are you looking for?</p>
+                        <label for="contract">Contract</label>
+                        <input type="checkbox" name="employment_type" id="contract">
+                        <label for="full-time">full-time</label>
+                        <input type="checkbox" name="employment_type" id="full-time">
+
+                        <fieldset>
+                            <legend>Day or night shift</legend>
+                            <label for="day">Day</label>
+                            <input type="radio" name="shift" id="day">
+                            <label for="night">Night</label>
+                            <input type="radio" name="shift" id="night">
+                        </fieldset>
+                    </div>
+
+                </div>                
+                
+                <button type="reset">Reset</button>
+                <input type="button" value="Submit">
+            </form>
+
+            
+        </section>
+        <section class="card">
+            <form action="">
+                <h1>Payment form</h1>
+                <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+
+                <section>
+                    <h2>Contact information</h2>
+                    <fieldset>
+                        <legend>Title</legend>
+
+                        <ul>
+                            <li>
+                                <label for="title_1">
+                                    <input type="radio" name="title" id="title_1" value="K">
+                                    King
+                                </label>
+                            </li><li>
+                                <label for="title_2">
+                                  <input type="radio" id="title_2" name="title" value="Q">
+                                  Queen
+                                </label>
+                              </li>
+                              <li>
+                                <label for="title_3">
+                                  <input type="radio" id="title_3" name="title" value="J">
+                                  Joker
+                                </label>
+                              </li> 
+                        </ul>
+                    </fieldset>
+                        <p>
+                        <label for="name">
+                            <span>Name:</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                            
+                        </label>
+                        <input type="text" spellcheck="true" name="username" id="name">
+                        </p>
+
+                        <p>
+                        <label for="mail">
+                            <span>Email:</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                            
+                        </label>
+                        <input type="email" name="usermail" id="email">
+                        </p>
+
+                        <p>
+                        <label for="pwd">
+                            <span>Password:</span>
+                            <strong>
+                                <abbr title="required">*</abbr>
+                            </strong>
+                        </label>
+                        <input type="password" name="password" id="pwd">
+                        </p>
+                </section>
+
+                <section>
+                    <h2>Payment information</h2>
+                    <p>
+                        <label for="card">
+                            <span>Card type:</span>
+                        </label>
+                        <select name="usercard" id="card">
+                            <option value="visa">Visa</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="number">
+                            <span>Card number:</span>
+                        </label>
+                        <input type="tel" name="cardnumber" id="number">
+
+                    </p>
+
+                    <p>
+                        <label for="expiration">
+                            <span>Expiration date:</span>
+                            <strong>
+                                <abbr title="required">*</abbr>
+                            </strong>
+                        </label>
+                        <input type="text" name="" id="expiration" required="true" 
+                            placeholder="MM/YY"
+                            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="upload">Upload</label>
+                        <input type="file" name="upload" id="upload" accept="image/*">
+
+                        <input type="range" name="test" id="price" min="0" max="100" step="1">
+                        <output class="price-output" for="test"></output>
+
+                        <p id="time"></p>
+
+                        <input type="date" name="" id="">
+
+                        <label for="myFruit">What's your favorite fruit?</label>
+                        <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+                        <datalist id="mySuggestion">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Blackberry</option>
+                        <option>Blueberry</option>
+                        <option>Lemon</option>
+                        <option>Lychee</option>
+                        <option>Peach</option>
+                        <option>Pear</option>
+                        </datalist>
+
+                          
+                    </p>
+                </section>
+
+                
+            </form>
+            
+
+            
+        </section>
+    </div>
+
+    
+    
+</body>
+</html>

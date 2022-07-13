@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html {
-    background: rgb(218, 216, 216);
+    background: rgb(43, 92, 148);
 }
+
+body {
+    min-height: 100vh;
+}
+
 
 .container {
     width: 85%;
@@ -24,7 +30,8 @@ html {
 }
 
 nav {
-    background: rgb(216, 130, 130);
+    background: rgb(39, 50, 143);
+    color: #fff;
 }
 
 nav .container {
@@ -46,20 +53,17 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 2rem;
-    width: 500px;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/**/
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
 }
 
-input {
-    padding: .5rem .25rem;
-    border-radius: 10px;
-    border: none;
-}
 
 /* Nav*/
 
@@ -74,8 +78,9 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 1rem;
+    color: #fff;
 }
 
 nav a:hover {
-    background-color: #fff;
+    background-color: rgb(43, 92, 148);
 }
